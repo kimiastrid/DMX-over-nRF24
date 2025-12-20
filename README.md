@@ -37,10 +37,11 @@ Solder a wire to the trace that you cut, but not on the side of the chip, but on
 
 ```
                  DMX chip
-               _______
+                _______
 ----- cut -----| pin 1
    |           |
    |
    |
   wire to RF Nano TX
 ```
+This wire then goes to RF Nano TX.
