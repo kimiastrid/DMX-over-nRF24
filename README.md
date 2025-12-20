@@ -45,3 +45,9 @@ Solder a wire to the trace that you cut, but not on the side of the chip, but on
   wire to RF Nano TX
 ```
 This wire then goes to RF Nano TX.
+
+|SN75176|RF Nano|
+|:-----:|:-----:|
+|pin 1|TX|
+|pin 5|GND|
+|pin 8|VCC|
