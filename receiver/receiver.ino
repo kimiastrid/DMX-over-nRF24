@@ -1,4 +1,8 @@
 // RF Nano DMX by kimiko, 2025
+// upload this code to the RF nano that will act as a receiver
+// (the one on the LED light)
+// The light will receive all the DMX channels, so you still need
+// to set the correct DMX starting address on the light
 
 #include <SPI.h>
 #include "nRF24L01.h" // library: https://github.com/maniacbug/RF24
