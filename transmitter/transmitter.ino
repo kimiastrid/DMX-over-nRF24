@@ -1,4 +1,9 @@
-// I used parts of code from mcnobby from the Arduino forum, but even they said in a post that they used parts of code from the internet, so thanks to everyone who contributed!
+// RF Nano DMX by kimiko, 2025
+// I used parts of code from mcnobby from the Arduino forum, 
+// but even they said in a post that they used parts of code 
+// from the internet, so thanks to everyone who contributed!
+
+// upload this to the RF Nano that will act as a transmitter
 
 #include <DMXSerial.h> // library: https://github.com/mathertel/DMXSerial
 #include <SPI.h>
