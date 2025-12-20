@@ -4,7 +4,7 @@ Wireless DMX system that uses RF Nano (Arduino Nano with nRF24L01)
 ![RF Nano](pics/rf-nano.jpg)
 
 ## No DMX chip needed!
-I didn't want to use a transceiver chip (MAX485 or SN75176) to receive the DMX signal, so I took apart the DMX controller and soldered a wire directly to the D (or DI - data input) pin of the transceiver inside. That way I actually bypassed the transceiver chip so the Arduino gets the usual UART signal levels.
+I didn't want to use a transceiver chip (MAX485 or SN75176) to receive the DMX signal, so I took apart the DMX controller and soldered a wire directly to the D (or DI - data input) pin of the transceiver inside. That way I actually bypassed the transceiver chip so the Arduino gets the usual UART signal levels. The transceiver should still work and you'll be able to use both the wireless and the usual wired system.
 
 ## DMX transceiver pinout
 ![SN75176 pinout](pics/sn75176.jpg)
@@ -16,3 +16,5 @@ Solder these wires like this:
 |pin 4|RX|
 |pin 5|GND|
 |pin 8|VCC|
+
+Do not remove the chip, just solder onto its pins.
