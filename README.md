@@ -35,15 +35,8 @@ We can bypass the DMX transceiver chip again, but this time, you'll have to cut 
 It is necessary to cut the PCB trace because the DMX chip interferes with the signal, and you can't just "inject" the signal from RF Nano.
 Solder a wire to the trace that you cut, but not on the side of the chip, but on the other side of the gap.
 
-```
-                 DMX chip
-                _______
------ cut -----| pin 1
-   |           |
-   |
-   |
-  wire to RF Nano TX
-```
+![Schematic](pics/schematic.svg)
+
 This wire then goes to RF Nano TX.
 
 |SN75176|RF Nano|
