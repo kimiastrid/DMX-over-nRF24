@@ -36,9 +36,11 @@ It is necessary to cut the PCB trace because the DMX chip interferes with the si
 Solder a wire to the trace that you cut, but not on the side of the chip, but on the other side of the gap.
 
 ```
+                 DMX chip
                _______
 ----- cut -----| pin 1
-   |            |
+   |           |
    |
-  wire
+   |
+  wire to RF Nano TX
 ```
