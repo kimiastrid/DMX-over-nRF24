@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
 <svg width="200" height="150" xmlns="http://www.w3.org/2000/svg">
-  <rect width="300" height="150" x="100" y="0" style="fill:white;stroke:white;" />
+  <rect width="300" height="150" x="0" y="0" style="fill:white;stroke:white;" />
   <rect width="70" height="100" x="100" y="0" style="fill:white;stroke:black;" />
   <line x1="0" y1="20" x2="100" y2="20" style="fill:white;stroke:black;" />
   <line x1="70" y1="10" x2="90" y2="30" style="fill:white;stroke:red;stroke-width:5;" />
