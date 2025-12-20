@@ -16,6 +16,9 @@
 #define MAXPAYLOAD 32 // max payload size for nrf24l01
 #define BURSTTIMER 40 // 40ms between blasts of radio data
 
+// this assumes CE pin 10, CSN pin 9
+// it might be different on different RF nano clones, like CE pin 7 and CSN pin 8
+// so it's best to check with the supplier
 RF24 radio(10,9);
 
 uint8_t pipe[6] = "DMXRF";
