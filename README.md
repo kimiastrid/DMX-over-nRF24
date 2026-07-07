@@ -14,7 +14,9 @@ Normally, you'd have to use a DMX transceiver chip like MAX485 or SN75176 to rec
 DMX transceiver pinout:
 ![SN75176 pinout](pics/sn75176.jpg)
 
-Find this chip in your DMX controller. You'll need three wires. I used wires from a network cable, they work well.
+Note: SN75176 and MAX485 have the same pinout, so in the following text, all references to SN75176 are also valid for MAX485.
+
+Find this chip in your DMX controller. You'll need three wires. I used wires from an ethernet cable, they work well.
 Solder these wires like this:
 
 |SN75176|RF Nano|
@@ -23,19 +25,27 @@ Solder these wires like this:
 |pin 5|GND|
 |pin 8|VCC|
 
-Do not remove the chip, just solder onto its pins.
+Do not remove the chip, just solder onto its pins. You're basically "spying" on its input while keeping the chip functional.
 
 ## Receiver
 
 Upload the transmitter code from Arduino IDE.
 
+### One way to do it
+
+If you don't want to hack your LED light, then you'll have to get a DMX transceiver chip (SN75176 or MAX485) or a ready-made DMX module.
+RF nano ---> DMX transceiver --> LED fixture DMX port
+
 ### Hacking the LED light
 
-We can bypass the DMX transceiver chip again, but this time, you'll have to cut the PCB trace that leads to pin 1. After this, you will not be able to use the usual DMX cable connection, only wireless.
-It is necessary to cut the PCB trace because the DMX chip interferes with the signal, and you can't just "inject" the signal from RF Nano.
-Solder a wire to the trace that you cut, but not on the side of the chip, but on the other side of the gap.
+RF nano --> directly to the microcontroller
 
-![Schematic](pics/schematic.svg)
+In order to avoid having to use an additional DMX transceiver, we can bypass the DMX transceiver chip in the LED light entirely. 
+You'll have to cut the PCB trace that leads to pin 1. After this, you will not be able to use the usual DMX cable connection, only wireless.
+It is necessary to cut the PCB trace because the transceiver chip puts a bias on the serial line and interferes with the signal, so you can't just "inject" the signal from RF Nano.
+Solder a wire to the trace that you cut, on the side of the gap that is not connected to the chip (see illustration).
+
+![Illustration](pics/illustration.png)
 
 This wire then goes to RF Nano TX.
 
