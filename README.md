@@ -34,7 +34,8 @@ Upload the transmitter code from Arduino IDE.
 ### One way to do it
 
 If you don't want to hack your LED light, then you'll have to get a DMX transceiver chip (SN75176 or MAX485) or a ready-made DMX module.
-RF nano ---> DMX transceiver --> LED fixture DMX port
+
+![Illustration](pics/illustration1.png)
 
 ### Hacking the LED light
 
@@ -45,7 +46,7 @@ You'll have to cut the PCB trace that leads to pin 1. After this, you will not b
 It is necessary to cut the PCB trace because the transceiver chip puts a bias on the serial line and interferes with the signal, so you can't just "inject" the signal from RF Nano.
 Solder a wire to the trace that you cut, on the side of the gap that is not connected to the chip (see illustration).
 
-![Illustration](pics/illustration.png)
+![Illustration](pics/illustration2.png)
 
 This wire then goes to RF Nano TX.
 
